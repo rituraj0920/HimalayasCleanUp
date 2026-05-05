@@ -12,7 +12,7 @@ import Campaigns from './pages/campaigns';
 import Achievements from './pages/achievements';
 import Volunteer from './pages/volunteer';
 import Donate from './pages/donate';
-import '/src/app.css'
+import '/src/App.css'
 
 const App = () => {
   return (
