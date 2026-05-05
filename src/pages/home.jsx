@@ -3,7 +3,7 @@ import React from 'react';
 import './pages.css'; // We'll add a few specific styles here
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
-
+import PhotoGallery from '../components/PhotoGallery';
 
 
 
@@ -33,6 +33,10 @@ const Home = () => {
                                                 
                     Learn More
            </button>
+
+           <section style={{ width: '100%', maxWidth: '1200px', marginTop: '50px' }}>
+             <PhotoGallery title="Recent Cleanups" />
+           </section>
           
         </div>
       </section>

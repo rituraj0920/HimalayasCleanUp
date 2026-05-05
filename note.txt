@@ -21,3 +21,27 @@ frontend/
 ├── .env                     # Environment variables (e.g., VITE_API_BASE_URL)
 ├── package.json
 └── vite.config.js
+
+
+
+backend/
+├── config/                  # Configuration files
+│   └── db.js                # Database connection setup (e.g., MongoDB/Mongoose)
+├── controllers/             # Logic for handling requests and responses
+│   ├── volunteerController.js
+│   ├── campaignController.js
+│   └── donationController.js
+├── models/                  # Database schemas
+│   ├── Volunteer.js         # Schema for volunteer details
+│   ├── Campaign.js          # Schema for campaign data
+│   └── Donation.js          # Schema for tracking donations
+├── routes/                  # API endpoint definitions
+│   ├── volunteerRoutes.js   # e.g., POST /api/volunteers/register
+│   ├── campaignRoutes.js    # e.g., GET /api/campaigns
+│   └── donationRoutes.js    # e.g., POST /api/donations
+├── middlewares/             # Custom middleware functions
+│   ├── errorHandler.js      # Global error handling
+│   └── corsPolicy.js        # Crucial for local dev and frontend deployment
+├── .env                     # Secrets (PORT, DB URI, API Keys)
+├── package.json
+└── server.js                # Entry point to initialize Express
