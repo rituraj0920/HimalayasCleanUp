@@ -2,17 +2,17 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import Layout Components
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './components/navbar';
+import Footer from './components/footer';
 
 // Import Pages
-import Home from './pages/Home';
-import Awareness from './pages/Awareness';
-import Campaigns from './pages/Campaigns';
-import Achievements from './pages/Achievements';
-import Volunteer from './pages/Volunteer';
-import Donate from './pages/Donate';
-import '/src/App.css'
+import Home from './pages/home';
+import Awareness from './pages/awareness';
+import Campaigns from './pages/campaigns';
+import Achievements from './pages/achievements';
+import Volunteer from './pages/volunteer';
+import Donate from './pages/donate';
+import '/src/app.css'
 
 const App = () => {
   return (

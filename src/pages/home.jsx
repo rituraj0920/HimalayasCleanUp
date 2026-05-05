@@ -3,7 +3,7 @@ import React from 'react';
 import './pages.css'; // We'll add a few specific styles here
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
-import PhotoGallery from '../components/PhotoGallery';
+import PhotoGallery from '../components/photoGallery';
 
 
 

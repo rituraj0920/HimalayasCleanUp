@@ -1,6 +1,6 @@
 // src/pages/Campaigns.jsx
 import React, { useState } from 'react';
-import CampaignCard from '../components/CampaignCard';
+import CampaignCard from '../components/campaignCard';
 import './pages.css';
 
 // Mock Data: Replace this with an API call later
