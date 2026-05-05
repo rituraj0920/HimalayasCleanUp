@@ -1,0 +1,23 @@
+frontend/
+├── public/                  # Public assets like favicons or static logos
+├── src/
+│   ├── assets/              # Images, CSS/SCSS files, fonts (e.g., Himalaya photos)
+│   ├── components/          # Reusable UI elements
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── CampaignCard.jsx
+│   │   └── PhotoGallery.jsx
+│   ├── pages/               # Main route views
+│   │   ├── Home.jsx         # Landing page
+│   │   ├── Awareness.jsx    # Info on Himalayan cleanliness
+│   │   ├── Campaigns.jsx    # Active & past cleanup drives
+│   │   ├── Achievements.jsx # Photo galleries and milestones
+│   │   ├── Volunteer.jsx    # Registration form
+│   │   └── Donate.jsx       # Donation support information/portal
+│   ├── services/            # API call logic (e.g., Axios/Fetch setups)
+│   │   └── api.js           
+│   ├── App.jsx              # Main router configuration
+│   └── main.jsx             # React DOM rendering entry point
+├── .env                     # Environment variables (e.g., VITE_API_BASE_URL)
+├── package.json
+└── vite.config.js
