@@ -34,11 +34,11 @@ const Home = () => {
                     Learn More
            </button>
 
-           <section style={{ width: '100%', maxWidth: '1200px', marginTop: '50px' }}>
-             <PhotoGallery title="Recent Cleanups" />
-           </section>
           
         </div>
+        <section style={{ width: '100%', maxWidth: '1200px', marginTop: '50px' }}>
+             <PhotoGallery title="Recent Cleanups" />
+           </section>
       </section>
 
       {/* Quick Info Grid */}
