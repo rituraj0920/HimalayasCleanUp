@@ -11,7 +11,7 @@ const mockCampaigns = [
     date: "Oct 15, 2026",
     location: "Kedarnath, Uttarakhand",
     description: "A post-monsoon drive to clear plastic waste accumulated along the final 5km stretch to the temple.",
-    image: "https://images.unsplash.com/photo-1626014903706-5384bc133775?q=80&w=800&auto=format&fit=crop",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfsv0H5UG8te_3tGDu4BVa-guCyUpljrIZ3g&s",
     status: "Upcoming"
   },
   {
@@ -20,7 +20,7 @@ const mockCampaigns = [
     date: "Aug 02, 2026",
     location: "Chamoli District",
     description: "Removing micro-trash from the botanical trails without disturbing the blooming alpine flora.",
-    image: "https://images.unsplash.com/photo-1596700813959-19e48ea61830?q=80&w=800&auto=format&fit=crop",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEKnmZH6WfSBVCeFfHgBR_iJCevdr8xh01Aw&s",
     status: "Completed"
   },
   {
@@ -29,7 +29,7 @@ const mockCampaigns = [
     date: "Nov 10, 2026",
     location: "Trishul Massif",
     description: "A high-altitude expedition targeting abandoned camping gear and non-biodegradable waste.",
-    image: "https://images.unsplash.com/photo-1522228020814-72212260172d?q=80&w=800&auto=format&fit=crop",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI0js87-JrdoqV60RvUB_neuT_k1Zu6wcSOA&s",
     status: "Upcoming"
   },
   {
