@@ -28,19 +28,6 @@ const dummyImages = [
 const PhotoGallery = ({ title = "Moments of Change" }) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Prevent background scrolling when lightbox is open
-  useEffect(() => {
-    if (selectedImage) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    
-    // Cleanup function
-    return () => { document.body.style.overflow = 'unset'; };
-  }, [selectedImage]);
-
-  const closeLightbox = () => setSelectedImage(null);
 
   return (
     <div className="gallery-wrapper">
@@ -63,18 +50,7 @@ const PhotoGallery = ({ title = "Moments of Change" }) => {
         ))}
       </div>
 
-      {/* Full Screen Lightbox Modal */}
-      {selectedImage && (
-        <div className="lightbox-backdrop active" onClick={closeLightbox}>
-          <div className="lightbox-content glass-panel" onClick={(e) => e.stopPropagation()}>
-            <button className="lightbox-close" onClick={closeLightbox}>×</button>
-            <img src={selectedImage.url} alt={selectedImage.alt} className="lightbox-img" />
-            <div className="lightbox-caption">
-              <p>{selectedImage.alt}</p>
-            </div>
-          </div>
-        </div>
-      )}
+
     </div>
   );
 };
