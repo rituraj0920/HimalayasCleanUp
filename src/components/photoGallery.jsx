@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './components.css'; 
+import pic1 from './images/pic1-himalaya.jpeg';
+import pic2 from './images/pic2-himalaya.jpeg';
+
 
 // Dummy data baked in for easy testing
 const dummyImages = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000&auto=format&fit=crop",
-    alt: "Volunteers cleaning a mountain trail"
+    url: pic2,
+    alt: "A wild mountain animal standing peacefully in its natural habitat"
   },
   {
     id: 2,
@@ -15,13 +18,13 @@ const dummyImages = [
   },
   {
     id: 3,
-    url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1000&auto=format&fit=crop",
-    alt: "Pristine Himalayan peaks after a successful drive"
+    url: pic1,
+    alt: "A beautiful confluence of rivers surrounded by mountains and serenity"
   },
   {
     id: 4,
-    url: "https://www.shivkhori.in/wp-content/uploads/2025/09/Kedarnath-768x614.webp",
-    alt: "Local community gathering for awareness"
+    url: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000&auto=format&fit=crop",
+    alt: "Volunteers cleaning a mountain trail"
   }
 ];
 

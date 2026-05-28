@@ -1,6 +1,10 @@
 import React from 'react';
 import './pages.css';
 
+import pic1 from '../components/images/pic1-himalaya.jpeg';
+import pic2 from '../components/images/pic2-himalaya.jpeg';
+
+
 // Mock data for the photo gallery
 const galleryImages = [
   {
@@ -9,10 +13,10 @@ const galleryImages = [
     alt: "Volunteers cleaning a mountain trail"
   },
   {
-    id: 2,
-    url: "https://images.unsplash.com/photo-1605001088653-f7728ce78cf2?q=80&w=1000&auto=format&fit=crop",
-    alt: "Collected waste bags at basecamp"
-  },
+      id: 2,
+      url: pic2,
+      alt: "A wild mountain animal standing peacefully in its natural habitat"
+    },
   {
     id: 3,
     url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1000&auto=format&fit=crop",
@@ -28,11 +32,11 @@ const galleryImages = [
     url: "https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=1000&auto=format&fit=crop",
     alt: "Plantation drive in the lower Garhwal region"
   },
-  {
-    id: 6,
-    url: "https://images.unsplash.com/photo-1618477461853-cf6ed80f4125?q=80&w=1000&auto=format&fit=crop",
-    alt: "Sorting recyclable plastics"
-  }
+   {
+      id: 6,
+      url: pic1,
+      alt: "A beautiful confluence of rivers surrounded by mountains and serenity"
+    },
 ];
 
 const Achievements = () => {
