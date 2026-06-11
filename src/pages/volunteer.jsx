@@ -7,7 +7,7 @@ const Volunteer = () => {
   const navigate = useNavigate(); // Initialized navigate
   
   // Define your API URL (Ideally from an environment variable)
-  const apiUrl = process.env.VITE_API_URL ;
+const apiUrl = import.meta.env.VITE_API_URL;
 
   const [formData, setFormData] = useState({
     fullName: '',
@@ -38,6 +38,7 @@ const Volunteer = () => {
 
       console.log('Server Response:', response.data);
       console.log('Form Data Submitted:', formData);
+      console.log("Sending request to:", `${apiUrl}/api/auth/volunteer/register`);
       
       alert(`Thank you, ${formData.fullName}! Your application to protect the Himalayas has been received.`);
       
