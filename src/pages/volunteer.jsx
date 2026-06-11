@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
+import axios from 'axios'; // Added missing import
+import { useNavigate } from 'react-router-dom'; // Added missing import
 import './pages.css';
 
 const Volunteer = () => {
+  const navigate = useNavigate(); // Initialized navigate
+  
+  // Define your API URL (Ideally from an environment variable)
+  const apiUrl = process.env.VITE_API_URL ;
+
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -12,26 +19,40 @@ const Volunteer = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
       [name]: value
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you would typically use Axios/Fetch to send data to your backend
-    console.log('Form Data Submitted:', formData);
-    alert(`Thank you, ${formData.fullName}! Your application to protect the Himalayas has been received.`);
-    
-    // Reset form after submission
-    setFormData({
-      fullName: '',
-      email: '',
-      phone: '',
-      region: '',
-      motivation: ''
-    });
+      
+    try {
+      // Send the formData state directly
+      const response = await axios.post(
+        `${apiUrl}/api/auth/volunteer/register`, 
+        formData, 
+        { withCredentials: true }
+      );
+
+      console.log('Server Response:', response.data);
+      console.log('Form Data Submitted:', formData);
+      
+      alert(`Thank you, ${formData.fullName}! Your application to protect the Himalayas has been received.`);
+      
+      // Reset form after successful submission
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        region: '',
+        motivation: ''
+      });
+    } catch (error) {
+      console.error("There was an error registering:", error);
+      alert("Failed to submit the application. Please try again.");
+    }
   };
 
   return (
